@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<meta charset="utf-8">
+    <meta name="author" content="RAJ_SHAH">
+    <meta name="description" content="A static website for introduction to IoT">
+    <meta name="keywords" content="iot,technology,web,ai,blogs,introduction">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+  	<link rel="stylesheet" type="text/css" href="../css/listings.css">
+  	<link rel="stylesheet" type="text/css" href="../css/form.css">
+  
+</head>
+<body style="margin: 0px;">
+	<div style="background-color: #EEE; margin-left: 5%; margin-right: 5%;">
+		<a href="../" title="Get back to home"><img src="../img/home.gif" style="width:360px; height:90px;"></a>
+	    <h1 style="display: inline-block; float: right; margin-right: 10%; margin-bottom: 0px;" class="pageHeader font-blue">The Internet of Things</h1>
+	</div>
+	<nav style="display: block; margin-left: 5%; margin-right: 4%;">
+		<a href="../news" style="float: left;" class="nav"> NEWS </a>
+		<a href="../blogs/" style="float: left;" class="nav"> BLOGS </a>
+		<a href="../devices/" style="float: left;" class="nav">IOT DEVICES</a>
+		<a href="../diy/" style="float: left;" class="nav">DIY / TOOLS</a>
+		<a href="../kickstarter/" style="float: left;" class="nav">KICK STARTER</a>
+	</nav>
+
+	
+	<!--iframe src="../index.html" name="newsFrame" style="width: 60%; height: 7000px; margin-left: 7%; border: none; margin-top: 5%;" scrolling="no"></iframe>
+	<iframe src="../index.html" name="listFrame" style="display: inline-block; width: 25%; height: 7000px; border: none;" scrolling="no"></iframe-->
+	
+	<div class="content">
+		<br>
+		<script type="text/javascript">
+			$('.message a').click(function(){
+			   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+			});
+
+		</script>
+
+		<div class="login-page">
+		  <div class="form">
+		    <form class="form" name="myForm" action="mailto:rpshah96@gmail.com"  method="GET">
+		      <input type="text" id="name" placeholder="name" required autofocus />
+		      <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+		      placeholder="email address"/ required >
+		      <input type="datetime" id="time" placeholder="Prefered time to contact"></input>
+		      <textarea id="msg" rows="4" cols="30" placeholder="Messahe Here..." style="margin-bottom: 5%:"></textarea>
+
+
+		      <input type="submit" value="Submit" style="background-color: #76b852; "></input>
+		      <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+		    </form>
+		   </div>
+		</div>
+		
+	</div>
+
+	<div class="pageFooter">
+	<br>
+		<ul style="list-style-type: circle;">
+			<li><a href="../news/" class="url"> NEWS </a></li>
+			<li><a href="../blogs/" class="url"> BLOGS </a></li>
+			<li><a href="../devices/" class="url">IOT DEVICES</a></li>
+			<li><a href="../diy/" class="url">DIY/TOOLS</a></li>
+			<li><a href="../kickstarter" class="url">KICK STARTER</a></li>
+		</ul>
+		<p>CopyRights@2016 | <a href="index.html" class="url">Contact Us</a> 
+		<br>
+		Conent is taken from internetofthingwiki.com</p>		
+	</div>
+
+</body>
+</html>

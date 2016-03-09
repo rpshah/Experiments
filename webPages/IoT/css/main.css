@@ -1,0 +1,85 @@
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 1.4em;
+}
+
+.pageHeader{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 2em;
+	color: #00CCFF;
+	margin-top: 10px;
+}
+
+.pageFooter{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #111;
+	color: #00CCFF;
+	margin-top: 10px;
+}
+
+nav{
+	background-color: #00CCFF;
+	min-width: 100%;
+}
+
+a.nav:link ,a.nav:visited, a.nav:active {
+	text-decoration: none;
+	font-size: 1.2em;
+	text-align: center;
+	padding-right: 4%;
+	padding-left: 4%;
+	color: #FFF;
+	background-color: #00CCFF;
+	border-bottom: thick solid #AAA;}
+
+a.nav:hover{
+	background-color: #EEE;
+	color: #00CCFF;
+	border-bottom: thick solid #00CCFF;
+
+}
+
+div.content{
+	margin-left: 10%;
+	width: 80%;
+	text-align: justify;
+	margin-right: 10%;
+	margin-top: 25px;
+	word-wrap: break-word;
+}
+
+.tx-primary{
+	color: #00CCFF;
+}
+
+blockquote{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	color: #00EEFF;
+}
+
+dt{
+	font-weight: bolder;
+}
+
+a.url:link , a.url:visited , a.url:active{
+	color: #00CCFF;
+	text-decoration: none;
+}
+a.url:hover{
+	font-weight: bolder;
+}
+
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+	opacity:1.0;
+    background-color:#000000;
+	z-index:999 !important;
+}
