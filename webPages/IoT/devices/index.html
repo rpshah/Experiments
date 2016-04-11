@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LogIN</title>
+	<title>Internet of Things</title>
 	<meta charset="utf-8">
     <meta name="author" content="RAJ_SHAH">
     <meta name="description" content="A static website for introduction to IoT">
     <meta name="keywords" content="iot,technology,web,ai,blogs,introduction">
-    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="icon" href="../img/logo.gif" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
   	<link rel="stylesheet" type="text/css" href="../css/listings.css">
-  	<link rel="stylesheet" type="text/css" href="../css/form.css">
   
 </head>
 <body style="margin: 0px;">
@@ -18,10 +17,10 @@
 		<a href="../" title="Get back to home"><img src="../img/home.gif" style="width:360px; height:90px;"></a>
 	    <h1 style="display: inline-block; float: right; margin-right: 10%; margin-bottom: 0px;" class="pageHeader font-blue">The Internet of Things</h1>
 	</div>
-	<nav style="display: block; margin-left: 5%; margin-right: 4%;">
+	<nav style="display: block;">
 		<a href="../news/index.html" style="float: left;" class="nav"> NEWS </a>
-		<a href="../blogs/index.html" style="float: left;" class="nav"> BLOGS </a>
-		<a href="../devices/index.html" style="float: left;" class="nav">IOT DEVICES</a>
+		<a href="../blogs/index.html" style="float: left; border-bottom: thick solid #CCC;" class="nav"> BLOGS </a>
+		<a href="#" style="float: left; margin-left: 5%; margin-right: 4%;" class="nav">IOT DEVICES</a>
 		<a href="../diy/index.html" style="float: left;" class="nav">DIY / TOOLS</a>
 		<a href="../kickstarter/index.html" style="float: left;" class="nav">KICK STARTER</a>
 	</nav>
@@ -29,59 +28,29 @@
 	
 	<!--iframe src="../index.html" name="newsFrame" style="width: 60%; height: 7000px; margin-left: 7%; border: none; margin-top: 5%;" scrolling="no"></iframe>
 	<iframe src="../index.html" name="listFrame" style="display: inline-block; width: 25%; height: 7000px; border: none;" scrolling="no"></iframe-->
+	<script type="text/javascript">
+		var device = prompt("What is Your favourite device ? \n1. Raspberry Pi or 2. Ardunio?");
+		if(device.localeCompare("1") == 0 ){
+			window.open("iotTrends.html");
+		}
+		else if(device.localeCompare("2") == 0){
+			window.open("tools100.html");
+		}
+		else{
+			window.open("#");
+		}
+	</script>
 	
-	<div class="content">
-		<br>
-		<script type="text/javascript">
-			$('.message a').click(function(){
-			   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-			});
-		</script>
-
-		<div class="login-page">
-		  <div class="form">
-		    <form class="login-form" name="myForm" method="GET" onsubmit="loginFunction()">
-		      <input type="text" id="name" placeholder="username" required autofocus />
-		      <input type="password" id="password" placeholder="password" required />
-		      <input type="submit" style="background-color: #76b852;" value="LOGIN"></input>
-		      <p class="message">Not registered? <a href="register.html">Create an account</a></p>
-		    </form>
-		  </div>
-		</div>
-
-		<script type="text/javascript">
-			function loginFunction() {
-				// body...
-				var n,p1;
-				n = document.getElementById('name').value;
-				p1 = document.getElementById('password').value;
-				
-				if(n.localeCompare("admin") == 0 && p1.localeCompare("password") == 0) {
-					alert("You are Loging In with UserName : "+n);
-					window.open("../index.html");
-					return true;
-				}
-				else{
-					alert("Wrong Entry...\nType Again.");
-					window.open("#");
-					return false;	
-				}
-			}
-
-		</script>
-
-	</div>
-
 	<div class="pageFooter">
 	<br>
 		<ul style="list-style-type: circle;">
 			<li><a href="../news/index.html" class="url"> NEWS </a></li>
 			<li><a href="../blogs/index.html" class="url"> BLOGS </a></li>
-			<li><a href="../devices/index.html" class="url">IOT DEVICES</a></li>
+			<li><a href="#" class="url">IOT DEVICES</a></li>
 			<li><a href="../diy/index.html" class="url">DIY/TOOLS</a></li>
 			<li><a href="../kickstarter/index.html" class="url">KICK STARTER</a></li>
 		</ul>
-		<p>CopyRights@2016 | <a href="index.html" class="url">Contact Us</a> 
+		<p>CopyRights@2016 | <a href="../contact/index.html" class="url">Contact Us</a> 
 		<br>
 		Conent is taken from internetofthingwiki.com</p>		
 	</div>
